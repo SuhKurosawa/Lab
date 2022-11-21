@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Estoque Lab </title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../lib/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../../lib/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+    <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name">Lab SafeTech</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <i class='bx bx-search' ></i>
+       <input type="text"  id="txt" onkeypress="handle(event)" class="nomes" list="Pacientes" placeholder="Search...">
+       <span class="tooltip">Search</span>
+       <datalist id="Pacientes">
+        <option><a href="../../src/Laudos/Resultado Hemograma simplificado final 2.pdf">João Paulo De Azevedo</a></option>
+      </datalist>
+    </li>
+      <li>
+       <a href="../home/index.html">
+         <i class='bx bx-home' ></i>
+         <span class="links_name">Pagina Principal</span>
+       </a>
+       <span class="tooltip">Pagina Principal</span>
+     </li>
+     <li>
+       <a href="../laudos/index.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Laudos e Amostras</span>
+       </a>
+       <span class="tooltip">Laudos e Amostras</span>
+     </li>
+     <li>
+       <a href="../estoque/index.html">
+        <i class="bx bx-box"></i>
+         <span class="links_name">Estoque</span>
+       </a>
+       <span class="tooltip">Estoque</span>
+     </li>
+     <li>
+       <a href="../maquinas/index.html">
+         <i class='bx bx-microchip' ></i>
+         <span class="links_name">Maquinas</span>
+       </a>
+       <span class="tooltip">Maquinas</span>
+     </li>
+     <li>
+     
+    </ul>
+  </div>
+<div class="home-section">
+  <h1 class="tilt"> Estoque Do Laboratorio</h1>
+  <h3><img  class="status" src="../../src/Icones/green-circle-icon.svg" /> Quantidade Suficiente Do Produto </h3>
+  <h3><img  class="status" src="../../src/Icones/Yellow_icon.svg" /> Quantidade Moderada Do Produto</h3>
+  <h3><img  class="status" src="../../src/Icones/red-circle-icon.svg" /> Quantidade Insuficiente Do Produto</h3>
+  <h2 class="descart"> Descartaveis</h2>
+  <div class="model">
+    <table>
+      <tr>
+          <th>Nome</th>
+          <th>Quantidade</th>
+          <th>Necessidade</th>
+      </tr>
+      <tr>
+          <td class="nomeProduct" >Luvas</td>
+          <td>100</td>
+          <td><img class="statusItem" src="../../src/Icones/green-circle-icon.svg"/></td>
+      </tr>
+      <tr>
+          <td class="nomeProduct" >Algodão</td>
+          <td>50</td>
+          <td><img class="statusItem" src="../../src/Icones/Yellow_icon.svg"/></td>
+      </tr>
+      <tr>
+        <td class="nomeProduct" >Garrote</td>
+        <td>35</td>
+        <td><img class="statusItem" src="../../src/Icones/Yellow_icon.svg"/></td>
+    </tr>
+    <tr>
+      <td class="nomeProduct" >Seringa</td>
+      <td>100</td>
+      <td><img class="statusItem" src="../../src/Icones/green-circle-icon.svg"/></td>
+  </tr>
+  <tr>
+    <td class="nomeProduct" >Máscaras</td>
+    <td>10</td>
+    <td><img class="statusItem" src="../../src/Icones/red-circle-icon.svg"/></td>
+</tr>
+<tr>
+  <td class="nomeProduct" >Jaleco Descartável</td>
+  <td>10</td>
+  <td><img class="statusItem" src="../../src/Icones/red-circle-icon.svg"/></td>
+</tr><tr>
+  <td class="nomeProduct" >Papel Filtro</td>
+  <td>37</td>
+  <td><img class="statusItem" src="../../src/Icones/Yellow_icon.svg"/></td>
+</tr>
+<tr>
+  <td class="nomeProduct" >Rolha</td>
+  <td>29</td>
+  <td><img class="statusItem" src="../../src/Icones/red-circle-icon.svg"/></td>
+</tr>
+<tr>
+  <td class="nomeProduct" >Tubo De Coleta</td>
+  <td>100</td>
+  <td><img class="statusItem" src="../../src/Icones/green-circle-icon.svg"/></td>
+</tr>
+<tr>
+  <td class="nomeProduct" >Pipeta</td>
+  <td>1</td>
+  <td><img class="statusItem" src="../../src/Icones/red-circle-icon.svg"/></td>
+</tr>
+  </table>
+  </div>
+  <h2 class="descart"> Reagentes</h2>
+  <div class="model">
+  <table>
+    <tr>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Necessidade</th>
+    </tr>
+    <tr>
+        <td class="nomeProduct">Metanol</td>
+        <td>100</td>
+        <td><img class="statusItem" src="../../src/Icones/green-circle-icon.svg"/></td>
+    </tr>
+    <tr>
+        <td class="nomeProduct" >Isopropanol</td>
+        <td>75</td>
+        <td><img class="statusItem" src="../../src/Icones/green-circle-icon.svg"/></td>
+    </tr>
+    <tr>
+      <td class="nomeProduct"> Solução de hidróxido de sódio</td>
+      <td>29</td>
+      <td><img class="statusItem" src="../../src/Icones/red-circle-icon.svg"/></td>
+  </tr>
+  <tr>
+    <td class="nomeProduct">Combimetanol solvente de Karl Fischer</td>
+    <td>40</td>
+    <td><img class="statusItem" src="../../src/Icones/Yellow_icon.svg"/></td>
+</tr>
+<tr>
+  <td class="nomeProduct" >Etanol absoluto</td>
+  <td>100</td>
+  <td><img class="statusItem" src="../../src/Icones/green-circle-icon.svg"/></td>
+</tr>
+<tr>
+<td class="nomeProduct" >Solução de tiosulfato de sódio</td>
+<td>10</td>
+<td><img class="statusItem" src="../../src/Icones/red-circle-icon.svg"/></td>
+</tr><tr>
+<td class="nomeProduct" >Ciclohexano PA EMSURE</td>
+<td>100</td>
+<td><img class="statusItem" src="../../src/Icones/green-circle-icon.svg"/></td>
+</tr>
+<tr>
+<td class="nomeProduct" >N-Hexano PA EMSURE;</td>
+<td>35</td>
+<td><img class="statusItem" src="../../src/Icones/Yellow_icon.svg"/></td>
+</tr>
+<tr>
+<td class="nomeProduct" >Diclorometano PA EMSURE</td>
+<td>100</td>
+<td><img class="statusItem" src="../../src/Icones/green-circle-icon.svg"/></td>
+</tr>
+</table>
+</div>
+      </div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../../lib/slick-1.8.1/slick/slick.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

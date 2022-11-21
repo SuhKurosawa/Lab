@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Estoque Lab </title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../lib/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../../lib/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+    <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name">Lab SafeTech</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <i class='bx bx-search' ></i>
+       <input type="text"  id="txt" onkeypress="handle(event)" class="nomes" list="Pacientes" placeholder="Search...">
+       <span class="tooltip">Search</span>
+       <datalist id="Pacientes">
+        <option><a href="../../src/Laudos/Resultado Hemograma simplificado final 2.pdf">João Paulo De Azevedo</a></option>
+      </datalist>
+    </li>
+      <li>
+       <a href="../home/index.html">
+         <i class='bx bx-home' ></i>
+         <span class="links_name">Pagina Principal</span>
+       </a>
+       <span class="tooltip">Pagina Principal</span>
+     </li>
+     <li>
+       <a href="../laudos/index.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Laudos e Amostras</span>
+       </a>
+       <span class="tooltip">Laudos e Amostras</span>
+     </li>
+     <li>
+       <a href="../estoque/index.html">
+        <i class="bx bx-box"></i>
+         <span class="links_name">Estoque</span>
+       </a>
+       <span class="tooltip">Estoque</span>
+     </li>
+     <li>
+       <a href="../maquinas/index.html">
+         <i class='bx bx-microchip' ></i>
+         <span class="links_name">Maquinas</span>
+       </a>
+       <span class="tooltip">Maquinas</span>
+     </li>
+     <li>
+     
+    </ul>
+  </div>
+<div class="home-section">
+  <h1 class="tilt"> Maquinas Do Laboratorio</h1>
+  <h3><img  class="status" src="../../src/Icones/green-circle-icon.svg" /> Significa Que A Maquina Esta Livre </h3>
+  <h3><img  class="status" src="../../src/Icones/red-circle-icon.svg" /> Significa Que A Maquina Esta Ocupada</h3>
+    <h2 class="descart"> Sala 1 </h2>
+    <div class="slider">
+      <div class="item">
+        <div class="temp">80°</div>
+        <img src="../../src/Maquinas/autoclave.jpg" alt="Autoclave" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Autoclave <img src="../../src/Icones/red-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <div class="temp">175°</div>
+        <img src="../../src/Maquinas/secagem.jpg" alt="Estufa de secagem e esterilização" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Estufa de secagem <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div> 
+      <div class="item">
+        <div class="temp">200°</div>
+        <img src="../../src/Maquinas/banhomaria.png" alt="Banho Maria" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Banho-Maria <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <img src="../../src/Maquinas/microscopio.jpg" alt="Microscópio" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Microscópio <img src="../../src/Icones/red-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <img src="../../src/Maquinas/espectrofotómetro.jpg" alt="Espectrofotómetro" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Espectrofotómetro <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <img src="../../src/Maquinas/refrigerador-vertical-280l-1.jpg" alt="Refrigerador" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Refrigerador <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <div class="temp">80°</div>
+        <img src="../../src/Maquinas/autoclave.jpg" alt="Autoclave" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Autoclave <img src="../../src/Icones/red-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <img src="../../src/Maquinas/microscopio.jpg" alt="Microscópio" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Microscópio <img src="../../src/Icones/red-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      </div>
+      <h2 class="descart"> Sala 2 </h2>
+    <div class="slider">
+      <div class="item">
+        <div class="temp">160°</div>
+        <img src="../../src/Maquinas/secagem.jpg" alt="Estufa de secagem e esterilização" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Estufa de secagem <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div> 
+      <div class="item">
+        <div class="temp">170°</div>
+        <img src="../../src/Maquinas/banhomaria.png" alt="Banho Maria" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Banho-Maria <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <img src="../../src/Maquinas/microscopio.jpg" alt="Microscópio" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Microscópio <img src="../../src/Icones/red-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <img src="../../src/Maquinas/espectrofotómetro.jpg" alt="Espectrofotómetro" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Espectrofotómetro <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <img src="../../src/Maquinas/centrifuga.jpg" alt="Centrifuga" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Centrifuga <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <img src="../../src/Maquinas/refrigerador-vertical-280l-1.jpg" alt="Refrigerador" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Refrigerador <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      
+      <div class="item">
+        <div class="temp">100°</div>
+        <img src="../../src/Maquinas/autoclave.jpg" alt="Autoclave" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Autoclave <img src="../../src/Icones/red-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      </div>
+      <h2 class="descart"> Sala 3 </h2>
+    <div class="slider">
+       <div class="item">
+        <img src="../../src/Maquinas/espectrofotómetro.jpg" alt="Espectrofotómetro" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Espectrofotómetro <img src="../../src/Icones/red-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <div class="temp">165°</div>
+        <img src="../../src/Maquinas/secagem.jpg" alt="Estufa de secagem e esterilização" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Estufa de secagem <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div> 
+      <div class="item">
+        <img src="../../src/Maquinas/refrigerador-vertical-280l-1.jpg" alt="Refrigerador" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Refrigerador <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <div class="temp">120°</div>
+        <img src="../../src/Maquinas/banhomaria.png" alt="Banho Maria" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Banho-Maria <img src="../../src/Icones/red-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <img src="../../src/Maquinas/microscopio.jpg" alt="Microscópio" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Microscópio <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <div class="temp">60°</div>
+        <img src="../../src/Maquinas/autoclave.jpg" alt="Autoclave" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Autoclave <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <img src="../../src/Maquinas/refrigerador-vertical-280l-1.jpg" alt="Refrigerador" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Refrigerador <img src="../../src/Icones/green-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+      <div class="item">
+        <div class="temp">80°</div>
+        <img src="../../src/Maquinas/autoclave.jpg" alt="Autoclave" class="itemImg">
+        <span class="itemName" href="https://www.lojaerdobrasil.com.br/fraction-x/metanol-alcool-metilico-1l">Autoclave <img src="../../src/Icones/red-circle-icon.svg" alt="Precisando" class="status"></span>
+      </div>
+     
+      
+      </div>
+      </div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../../lib/slick-1.8.1/slick/slick.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Estoque Lab </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name">Lab SafeTech</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <i class='bx bx-search' ></i>
+       <input type="text"  id="txt" onkeypress="handle(event)" class="nomes" list="Pacientes" placeholder="Search...">
+       <span class="tooltip">Search</span>
+       <datalist id="Pacientes">
+        <option><a href="../../src/Laudos/Resultado Hemograma simplificado final 2.pdf">João Paulo De Azevedo</a></option>
+      </datalist>
+    </li>
+      <li>
+       <a href="../home/index.html">
+         <i class='bx bx-home' ></i>
+         <span class="links_name">Pagina Principal</span>
+       </a>
+       <span class="tooltip">Pagina Principal</span>
+     </li>
+     <li>
+       <a href="../laudos/index.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Laudos e Amostras</span>
+       </a>
+       <span class="tooltip">Laudos e Amostras</span>
+     </li>
+     <li>
+       <a href="../estoque/index.html">
+        <i class="bx bx-box"></i>
+         <span class="links_name">Estoque</span>
+       </a>
+       <span class="tooltip">Estoque</span>
+     </li>
+     <li>
+       <a href="../maquinas/index.html">
+         <i class='bx bx-microchip' ></i>
+         <span class="links_name">Maquinas</span>
+       </a>
+       <span class="tooltip">Maquinas</span>
+     </li>
+     <li>
+     
+    </ul>
+  </div>
+<section class="home-section">
+    <h1 class="tilt">Laudos e Amostras Do Laboratorio</h1>
+    <div class="container">
+      <div class="item">
+      <img src="../../src/Icones/149071.png" alt="Paciente" class="itemImg">
+      <button class="itemName" id="button" >Luciana Correia Silva</button>   
+    </div>
+    <div class="item">
+      <img src="../../src/Icones/149071.png" alt="Paciente" class="itemImg">
+      <button class="itemName" id="button1" > Fernanda Lima Castro</button>   
+    </div>
+    <div class="item">
+      <img src="../../src/Icones/149071.png" alt="Paciente" class="itemImg">
+      <button class="itemName" id="button2" >Andre Matos Da Silva</button>   
+    </div>
+    <div class="item">
+      <img src="../../src/Icones/149071.png" alt="Paciente" class="itemImg">
+      <button class="itemName" id="button3" >Paulo Henrique Mardegann</button>   
+    </div>
+    <div class="item">
+      <img src="../../src/Icones/addperson.png" alt="Paciente" class="itemImg">
+      <button class="itemName" id="button4" >Adicionar Paciente</button>   
+    </div>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+      <div class="modal-header">
+        <h2>Paciente</h2>
+        <button id="close-modal">Fechar</button>
+      </div>
+      <div class="modalbody">
+        <div>
+          <img class="userImg" src="../../src/Icones/149071.png ">
+        </div>
+          <div class="dadosPacient">
+            <span>Nome :</span>
+            <span class="pacientName"></span>
+            <br>
+            <span>Idade :</span>
+        <span class="idadeUser"></span>
+        <br>
+        <span>Exame Realizado :</span>
+        <span class="exameRealizado"></span>
+        <br>
+        <span>Tipo de Amostra :</span>
+        <span class="tipoAmostra"></span>
+          </div>
+          <br>
+      </div>
+      <div class="containerCode">
+          <img src="../../src/Icones/qrcode.png" alt="" class="qrCode">
+      </div>
+    </div>
+</section>
+
+  <script src="script.js"></script>
+  <script src="laudos.js"></script>
+
+</body>
+</html>
